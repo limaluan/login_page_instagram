@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    
+    text-decoration: none;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    font-weight: 400;
+}
+
+html {
+    --blue: #0095F6;
+    --gray: #DBDBDB;
+    --gray-dark: #8E8E8E;
+    --background: #FAFAFA;
+
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+
+    min-height: 100vh;
+}
+
+body > article {
+    margin-top: 8rem;
+    align-items: initial !important;
+}
+
+.sr-only {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -1px;
+    visibility: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg {
+    width: 36rem;
+    height: 62rem;
+
+    background: url(../img/instagram-celular.png) no-repeat center/contain;
+    background-size: min(200%);
+    background-position-y: -7rem;
+}
+
+[class$="area"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 36.5rem;
+    margin-bottom: 1rem;
+
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+.login-area { 
+    padding: 2.5rem;
+    border: 1px solid var(--gray);
+}
+
+.login-area header img {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.login-area footer {
+    flex-direction: column;
+}
+
+.separator{
+    width: 100%;
+}
+
+.separator div:nth-child(odd){
+    border: 1px solid var(--gray);
+    width: 40%;
+}
+
+.separator div:nth-child(even){
+    color: var(--gray-dark);
+    line-height: 0;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+    padding: 1.8rem;
+}
+
+.login footer {
+    flex-direction: column;
+
+    margin: 1.2rem 0;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+
+    color: #485A96;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    margin-bottom: 1.2rem;
+}
+
+.facebook-login img {
+    margin-right: .5rem;
+    
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.forgotten-pass {
+    font-size: 1.2rem;
+}
+
+.app-area {
+    background-color: var(--background);
+}
+
+.app-area p {
+    margin: 1rem 0 2rem 0;
+}
+
+.get-app img {
+    width: 13.6rem;
+    margin: 0 .5rem;
+}
+
+body > footer {
+    
+}
+
+/*-------- Input & Buttons*/
+input {
+    background-color: var(--background);
+    
+    height: 3.6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+
+    border: 1px solid var(--gray);
+    border-radius: .5rem;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+    color: var(--gray-dark);
+}
+
+.button {
+    color: #FAFAFA;
+    background-color: var(--blue);
+
+    padding: .8rem 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
