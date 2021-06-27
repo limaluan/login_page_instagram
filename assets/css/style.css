@@ -20,7 +20,10 @@ html {
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+
     background-color: var(--background);
 
     min-height: 100vh;
@@ -128,7 +131,7 @@ body > article {
 }
 
 .app-area {
-    background-color: var(--background);
+    background-color: var(--background);   
 }
 
 .app-area p {
@@ -140,8 +143,16 @@ body > article {
     margin: 0 .5rem;
 }
 
+/*-------- Page Footer*/
 body > footer {
-    
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+footer .footer *{
+    color: var(--gray-dark);
+    margin: .5rem .8rem;
+    font-size: 1.2rem;
 }
 
 /*-------- Input & Buttons*/
