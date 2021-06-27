@@ -34,7 +34,8 @@ body > article {
     align-items: initial !important;
 }
 
-.sr-only {
+/* This class only hidden objects of users */
+.sr-only {  
     position: absolute;
     top: 0;
     left: 0;
@@ -149,10 +150,15 @@ body > footer {
     margin-bottom: 5rem;
 }
 
+.footer {
+    flex-wrap: wrap;
+}
+
 footer .footer *{
     color: var(--gray-dark);
-    margin: .5rem .8rem;
     font-size: 1.2rem;
+
+    margin: .5rem .8rem;
 }
 
 /*-------- Input & Buttons*/
@@ -182,4 +188,10 @@ input::placeholder {
 
 .button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 750px){
+    #bg {
+        display: none;
+    }
 }
