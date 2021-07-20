@@ -181,13 +181,18 @@ input::placeholder {
 
 .button {
     color: #FAFAFA;
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
 
     padding: .8rem 0;
 }
 
 .button:hover {
     cursor: pointer;
+}
+
+.buttonDisabled {
+    color: #FAFAFA;
+    background-color: #87c4ec;
 }
 
 @media (max-width: 750px){

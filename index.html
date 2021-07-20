@@ -28,12 +28,12 @@
 
 				<form>
 					<label for="email" class="sr-only">Telefone, nome de usuário ou email</label>
-					<input type="email" id="email" placeholder="Telefone, nome de usuário ou email">
+					<input type="email" id="email" oninput="formValidation()" placeholder="Telefone, nome de usuário ou email">
 
 					<label for="password" class="sr-only">Senha</label>
-					<input type="password" id="password" placeholder="Senha">
+					<input type="password" id="password" placeholder="Senha" oninput="formValidation()">
 
-					<input type="button" value="Entrar" type="submit" class="button">
+					<input type="button" value="Entrar" type="submit" class="buttonDisabled" id="enter">
 				</form>
 
 				<div class="separator container">
